@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the emic_features feature.
+ */
+
+include_once 'emic_features.features.inc';
