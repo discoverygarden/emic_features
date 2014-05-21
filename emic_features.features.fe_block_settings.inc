@@ -22,6 +22,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'content',
         'status' => 1,
@@ -49,6 +55,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'footer',
         'status' => 1,
@@ -76,6 +88,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'header',
         'status' => 1,
@@ -103,6 +121,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'header',
         'status' => 1,
@@ -130,6 +154,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'content',
         'status' => 1,
@@ -157,6 +187,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => '',
         'status' => 0,
@@ -184,6 +220,12 @@ function emic_features_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
       'emictheme' => array(
         'region' => 'content',
         'status' => 1,

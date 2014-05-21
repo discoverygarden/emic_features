@@ -29,7 +29,7 @@ function emic_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: main-menu_home:<front>
@@ -69,7 +69,7 @@ function emic_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: main-menu_members:uuid/node/21439854-781f-4925-9af5-bd2c49e6cd08
@@ -92,29 +92,7 @@ function emic_features_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_my-workbench:islandora/object
-  $menu_links['main-menu_my-workbench:islandora/object'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'islandora/object',
-    'router_path' => 'islandora',
-    'link_title' => 'My Workbench',
-    'options' => array(
-      'attributes' => array(
-        'class' => array(
-          0 => 'my-workbench',
-        ),
-      ),
-      'identifier' => 'main-menu_my-workbench:islandora/object',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'customized' => 1,
   );
   // Translatables
@@ -123,7 +101,6 @@ function emic_features_menu_default_menu_links() {
   t('Home');
   t('Lab');
   t('Members');
-  t('My Workbench');
 
 
   return $menu_links;
