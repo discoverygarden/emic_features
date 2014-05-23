@@ -59,8 +59,8 @@ function emic_features_views_default_views_alter(&$data) {
     $data['frontpage']->display['default']->display_options['filters']['status']['group'] = 1; /* WAS: 0 */
     $data['frontpage']->display['default']->display_options['row_plugin'] = 'fields'; /* WAS: 'node' */
     $data['frontpage']->display['default']->display_options['use_more_always'] = FALSE; /* WAS: '' */
-    $data['frontpage']->display['feed']->display_options['enabled'] = FALSE; /* WAS: '' */
     unset($data['frontpage']->display['default']->display_options['row_options']);
+    unset($data['frontpage']->display['feed']);
   }
 }
 
@@ -68,7 +68,111 @@ function emic_features_views_default_views_alter(&$data) {
  * Implements hook_islandora_solr_fields_features_default_fields().
  */
 function emic_features_islandora_solr_fields_features_default_fields() {
-  return array();
+  return array(
+  0 => array(
+    'solr_field' => 'dc.title',
+    'field_type' => 'facet_fields',
+    'weight' => 0,
+    'solr_field_settings' => array(
+      'label' => 'Title',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+    ),
+  ),
+  1 => array(
+    'solr_field' => 'dc.title',
+    'field_type' => 'result_fields',
+    'weight' => 0,
+    'solr_field_settings' => array(
+      'label' => 'Title',
+      'snippet' => NULL,
+      'date_format' => '',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+      'link_to_object' => TRUE,
+      'link_to_search' => FALSE,
+    ),
+  ),
+  2 => array(
+    'solr_field' => 'mods_genre_s',
+    'field_type' => 'sort_fields',
+    'weight' => 0,
+    'solr_field_settings' => array(
+      'label' => 'Genre',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+    ),
+  ),
+  3 => array(
+    'solr_field' => 'mods_genre_ms',
+    'field_type' => 'facet_fields',
+    'weight' => 1,
+    'solr_field_settings' => array(
+      'label' => 'Genre',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+    ),
+  ),
+  4 => array(
+    'solr_field' => 'dc.description',
+    'field_type' => 'result_fields',
+    'weight' => 1,
+    'solr_field_settings' => array(
+      'label' => 'Description',
+      'snippet' => NULL,
+      'date_format' => '',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+      'link_to_object' => FALSE,
+      'link_to_search' => FALSE,
+    ),
+  ),
+  5 => array(
+    'solr_field' => 'mods_typeOfResource_ms',
+    'field_type' => 'sort_fields',
+    'weight' => 1,
+    'solr_field_settings' => array(
+      'label' => 'Type',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+    ),
+  ),
+  6 => array(
+    'solr_field' => 'mods_genre_ms',
+    'field_type' => 'result_fields',
+    'weight' => 2,
+    'solr_field_settings' => array(
+      'label' => 'Genre',
+      'snippet' => NULL,
+      'date_format' => '',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+      'link_to_object' => FALSE,
+      'link_to_search' => TRUE,
+    ),
+  ),
+);
 }
 
 /**

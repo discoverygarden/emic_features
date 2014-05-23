@@ -47,7 +47,7 @@ function emic_features_features_override_default_overrides() {
   $overrides["views_view.frontpage.display|default|display_options|row_options"]["DELETED"] = TRUE;
   $overrides["views_view.frontpage.display|default|display_options|row_plugin"] = 'fields';
   $overrides["views_view.frontpage.display|default|display_options|use_more_always"] = FALSE;
-  $overrides["views_view.frontpage.display|feed|display_options|enabled"] = FALSE;
+  $overrides["views_view.frontpage.display|feed"]["DELETED"] = TRUE;
 
  return $overrides;
 }

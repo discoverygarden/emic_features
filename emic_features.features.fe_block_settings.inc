@@ -111,6 +111,72 @@ function emic_features_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['islandora_solr-basic_facets'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'basic_facets',
+    'module' => 'islandora_solr',
+    'node_types' => array(),
+    'pages' => 'islandora/search/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'emictheme' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'emictheme',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['islandora_solr-current_query'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'current_query',
+    'module' => 'islandora_solr',
+    'node_types' => array(),
+    'pages' => 'islandora/search/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'emictheme' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'emictheme',
+        'weight' => -18,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
   $export['islandora_solr-simple'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -142,6 +208,39 @@ function emic_features_default_fe_block_settings() {
     ),
     'title' => '<none>',
     'visibility' => 0,
+  );
+
+  $export['islandora_solr-sort'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'sort',
+    'module' => 'islandora_solr',
+    'node_types' => array(),
+    'pages' => 'islandora/search/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'emictheme' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'emictheme',
+        'weight' => -17,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
   );
 
   $export['system-main'] = array(
