@@ -72,6 +72,24 @@ function emic_features_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_login:user/login
+  $menu_links['main-menu_login:user/login'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'user/login',
+    'router_path' => 'user/login',
+    'link_title' => 'Login',
+    'options' => array(
+      'attributes' => array(),
+      'identifier' => 'main-menu_login:user/login',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_members:uuid/node/21439854-781f-4925-9af5-bd2c49e6cd08
   $menu_links['main-menu_members:uuid/node/21439854-781f-4925-9af5-bd2c49e6cd08'] = array(
     'menu_name' => 'main-menu',
@@ -95,12 +113,36 @@ function emic_features_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_my-workbench:workbench
+  $menu_links['main-menu_my-workbench:workbench'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'workbench',
+    'router_path' => 'workbench',
+    'link_title' => 'My Workbench',
+    'options' => array(
+      'attributes' => array(
+        'class' => array(
+          0 => 'my-workbench',
+        ),
+      ),
+      'identifier' => 'main-menu_my-workbench:workbench',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Documentation');
   t('Home');
   t('Lab');
+  t('Login');
   t('Members');
+  t('My Workbench');
 
 
   return $menu_links;
