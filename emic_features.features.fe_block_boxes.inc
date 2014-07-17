@@ -9,13 +9,12 @@
  */
 function emic_features_default_fe_block_boxes() {
   $export = array();
-
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Featured Links Frontpage';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'featured_links';
-  $fe_block_boxes->body = '<ul><li class="editions"><a href="/islandora/emic/collection/islandora:criticalEditionCollection"></a></li>
-<li class="coop"><a href="/islandora/emic/collection/islandora:sourceCollection"></a></li>
+  $fe_block_boxes->body = '<ul><li class="editions"><a href="/islandora/object/islandora:editions"></a></li>
+<li class="coop"><a href="/islandora/object/islandora:co-op"></a></li>
 <li class="workbench"><a href="/workbench"></a></li>
 </ul>';
 
