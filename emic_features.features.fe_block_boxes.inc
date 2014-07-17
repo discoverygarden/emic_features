@@ -9,7 +9,6 @@
  */
 function emic_features_default_fe_block_boxes() {
   $export = array();
-  dsm(array(), "rant hook_default_fe_block_boxes()");
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Featured Links Frontpage';
   $fe_block_boxes->format = 'full_html';
